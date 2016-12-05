@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>私有云</title>
+  <link rel="stylesheet" href="__ASSETS__bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="__ASSETS__css/main.css">
+  <script src="__ASSETS__bootstrap/js/jquery.js"></script>
+  <script src="__ASSETS__bootstrap/js/bootstrap.js"></script>
+  <script>
+    $(function(){
+      $("#pingmu").click(function(){
+        
+        $("#view").addClass("container");
+        $(this).text("宽屏版");
+        return false;
+      })
+    })
+  </script>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <header class="header-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="biaoti">恒天然标法数据库</h1>
+          </div>
+        </div>
+        <div class="row mokuai">
+          <div class="col-sm-12 text-center">
+            <a href="" class="btn btn-default btn-doc header-dq">标法数据库</a>
+            <a href="" class="btn btn-default btn-doc">竞品数据库</a>
+            <a href="" class="btn btn-default btn-doc">信息检测库</a>
+            <a href="" class="btn btn-default btn-doc">产品指标库</a>
+            <a href="" class="btn btn-default btn-doc">限量数据库</a>
+            <a href="" class="btn btn-default btn-doc">小数据库</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 头部结束 -->
+    <!-- 头部导航开始 -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">恒天然/span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">恒天然</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active active_header"><a href="#">首页</a></li>
+            <li><a href="#">法规动态</a></li>
+            <li><a href="#">标准动态</a></li>
+            <li><a href="#">法规问答</a></li>
+            <li><a href="#">标法专题</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">行业CRM</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="#" id="pingmu">窄屏版</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">修改密码</a></li>
+                <li class="divider"></li>
+                <li><a href="#">安全退出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 头部导航结束 -->
+    <!-- 正文开始 -->
+    <div class="container-fluid" id="view">
+        <!-- row开始 -->
+        <div class="row">
+          <!-- 左侧开始 -->
+          <div class="col-md-9">
+            <div class="content-main">
+              <div class="content-content">
+                <div class="panel panel-info">
+                    <div class="panel-heading">最新公告 <!-- <div class="more"><a href="">更多</a></div> --></div>
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href="">2016-10-09 总局关于婴幼儿配方乳粉产品配方注册管理过渡期的公告</a></li>
+                      <li class="list-group-item"><a href="">2016-09-23 关于《食品安全国家标准 食品微生物学检验 小肠结肠炎耶尔森氏菌检验》等标准 调整实施日期的说明</a></li>
+                      <li class="list-group-item"><a href="">2016-11-18 总局关于印发保健食品注册审评审批工作细则的通知</a></li>
+                      <li class="list-group-item"><a href="">2016-10-09 总局关于婴幼儿配方乳粉产品配方注册管理过渡期的公告</a></li>
+                      <li class="list-group-item"><a href="">2016-09-23 关于《食品安全国家标准 食品微生物学检验 小肠结肠炎耶尔森氏菌检验》等标准 调整实施日期的说明</a></li>
+                      <li class="list-group-item"><a href="">2016-11-18 总局关于印发保健食品注册审评审批工作细则的通知</a></li>
+                    </ul>
+                    <div class="panel-footer text-right"><a href="">更多</a></div>
+                </div>
+              </div>
+              <div class="content-content">
+                <div class="panel panel-info">
+                  <div class="panel-heading">最新添加法规 <div class="more"><a href="">更多</a></div></div>
+                  <table class="table table-hover table-striped">
+                    <tr>
+                      <th width=30%>标题</th>
+                      <th width=20%>文号</th>
+                      <th class="infohide" width=10%>类别</th>
+                      <th class="infohide" width=10%>颁发部门</th>
+                      <th width=10%>状态</th>
+                      <th class="infohide" width=10%>发布日期</th>
+                      <th class="infohide" width=10%>实施日期</th>
+                    </tr>
+                    <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                     <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                     <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                     <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                     <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                     <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                     <tr>
+                      <td><a href="">预告订定「食品添加物规格检验方法-氟化钾」草案</a></td>
+                      <td>部授食字第1051902370号</td>
+                      <td class="infohide"><a href="">法规草案</a></td>
+                      <td class="infohide">卫生福利部</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-24</td>
+                      <td class="infohide">2016-11-22</td>
+                    </tr>
+                  </table> 
+                  <div class="panel-footer text-right"><a href="">更多</a></div>
+                </div>
+              </div>
+              <!-- 内容结束 -->
+               <!-- 内容开始 -->
+              <div class="content-content">
+                <div class="panel panel-info">
+                  <div class="panel-heading">最新添加标准 <div class="more"><a href="">更多</a></div></div>
+                  <table class="table table-hover table-striped">
+                    <tr>
+                      <th width=30%>标题</th>
+                      <th width=20%>文号</th>
+                      <th class="infohide" width=10%>类别</th>
+                      <th class="infohide" width=10%>颁发部门</th>
+                      <th width=10%>状态</th>
+                      <th class="infohide" width=10%>发布日期</th>
+                      <th class="infohide" width=10%>实施日期</th>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr><tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">中国标准化研究院关于对《蛋白酶K》等六项国家标准征求意见的函</a></td>
+                      <td></td>
+                      <td class="infohide"><a href="">征求意见稿</a></td>
+                      <td class="infohide">中国标准化研究院</td>
+                      <td>意见征求中</td>
+                      <td class="infohide">2016-11-21</td>
+                      <td class="infohide"></td>
+                    </tr>
+                  </table> 
+                  <div class="panel-footer text-right"><a href="">更多</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- 左侧结束 -->
+           <!-- 右侧导航栏开始 -->
+          <div class="col-md-3">
+            <div class="content-menu">
+              <div class="widget">
+                <h4 class="title">法律法规分类</h4>
+                <ul class="list-group">
+                  <li class="list-group-item active">
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">国家法律<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                          <li class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                          <li class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                          <li class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                      </ul>
+                    </div>
+                     
+                  </li>
+                  <li class="list-group-item">行政法规</li>
+                  <li class="list-group-item">法规草案</li>
+                  <li class="list-group-item">政府内部文件</li>
+                  <li class="list-group-item">部委规章</li>
+                  <li class="list-group-item">港澳台地区</li>
+                  <li class="list-group-item">国外法规</li>
+                  <li class="list-group-item">地方法规</li>
+                  <li class="list-group-item">其他相关法规</li>
+                </ul>
+              </div>
+              <!-- 法律法规导航结束 -->
+              <div class="widget">
+                <h4 class="title">标准分类</h4>
+                <ul class="list-group">
+                  <li class="list-group-item active">
+                    产品标准
+                  </li>
+                  <li class="list-group-item"> 畜牧养殖标准</li>
+                  <li class="list-group-item">原料标准</li>
+                  <li class="list-group-item">质量控制标准</li>
+                  <li class="list-group-item">食品添加剂标准</li>
+                  <li class="list-group-item">包装物料标准</li>
+                  <li class="list-group-item">检验方法标准</li>
+                  <li class="list-group-item">标签标识标准</li>
+                  <li class="list-group-item">征求意见稿</li>
+                  <li class="list-group-item">国外标准</li>
+                  <li class="list-group-item">其他标准</li>
+                </ul>
+              </div>
+              <!-- 标准分类导航结束 -->
+              <div class="widget">
+                <h4 class="title">标签云</h4>
+                <a href="" class="btn btn-default ">粮食及其制品</a>
+                <a href="" class="btn btn-default ">调味品</a>
+                <a href="" class="btn btn-default ">乳及乳制品</a>
+                <a href="" class="btn btn-default ">饮料</a>
+                <a href="" class="btn btn-default ">方便食品</a>
+                <a href="" class="btn btn-default ">罐头</a>
+                <a href="" class="btn btn-default ">冷冻饮品</a>
+                <a href="" class="btn btn-default ">速冻食品</a>
+                <a href="" class="btn btn-default ">粮食及其制品</a>
+                <a href="" class="btn btn-default ">调味品</a>
+                <a href="" class="btn btn-default ">乳及乳制品</a>
+                <a href="" class="btn btn-default ">饮料</a>
+                <a href="" class="btn btn-default ">方便食品</a>
+                <a href="" class="btn btn-default ">罐头</a>
+                <a href="" class="btn btn-default ">罐头</a>
+                <a href="" class="btn btn-default ">冷冻饮品</a>
+              </div>
+            </div>
+          </div>
+          <!-- 右侧导航结束 -->
+        </div>
+        <!-- row结束 -->
+      </div>
+      <!-- 正文结束     -->
+      <footer class="footer-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                  <div class="widget-footer cylj">
+                    <h4 class="title">常用链接</h4>
+                    <a href="">食品伙伴网</a>
+                    <a href="">食品论坛</a>
+                    <a href="">卫生部</a>
+                    <a href="">质检总局</a>
+                    <a href="">食品伙伴网</a>
+                    <a href="">食品论坛</a>
+                    <a href="">卫生部</a>
+                    <a href="">质检总局</a>
+                    <a href="">食品伙伴网</a>
+                    <a href="">食品论坛</a>
+                    <a href="">卫生部</a>
+                    <a href="">质检总局</a>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                  <div class="widget-footer">
+                    <h4 class="title">标签云</h4>
+                    <a href="" class="btn btn-default btn-sm">粮食及其制品</a>
+                    <a href="" class="btn btn-default btn-sm">调味品</a>
+                    <a href="" class="btn btn-default btn-sm">乳及乳制品</a>
+                    <a href="" class="btn btn-default btn-sm">饮料</a>
+                    <a href="" class="btn btn-default btn-sm">方便食品</a>
+                    <a href="" class="btn btn-default btn-sm">罐头</a>
+                    <a href="" class="btn btn-default btn-sm">冷冻饮品</a>
+                    <a href="" class="btn btn-default btn-sm">速冻食品</a>
+                    <a href="" class="btn btn-default btn-sm">粮食及其制品</a>
+                    <a href="" class="btn btn-default btn-sm">调味品</a>
+                    <a href="" class="btn btn-default btn-sm">乳及乳制品</a>
+                    <a href="" class="btn btn-default btn-sm">饮料</a>
+                    <a href="" class="btn btn-default btn-sm">方便食品</a>
+                    <a href="" class="btn btn-default btn-sm">罐头</a>
+                    <a href="" class="btn btn-default btn-sm">罐头</a>
+                    <a href="" class="btn btn-default btn-sm">冷冻饮品</a>
+                    <a href="" class="btn btn-default btn-sm">饮料</a>
+                    <a href="" class="btn btn-default btn-sm">方便食品</a>
+                    <a href="" class="btn btn-default btn-sm">罐头</a>
+                    <a href="" class="btn btn-default btn-sm">罐头</a>
+                    <a href="" class="btn btn-default btn-sm">冷冻饮品</a>
+                    <a href="" class="btn btn-default btn-sm">...</a>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                  <div class="widget-footer">
+                    <h4 class="title">客服</h4>
+                    <p>服务专员:Bernice   </p>
+                    <p>座机:0535-2122194  </p>
+                    <p>邮箱：info21@foodmate.net</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+      </footer>
+      <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright &copy; <a href="http://www.foodmate.net/">食品伙伴网</a></span> |
+                    <span><a href="http://foodmate.net/" target="_blank">鲁ICP备12345678号</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

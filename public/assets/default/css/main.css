@@ -1,0 +1,161 @@
+body{
+	background: #EBEBEB;
+}
+.header-main{
+	height:234px;
+	background: url(../images/header.jpg) top left no-repeat;
+	position: relative;
+}
+.biaoti{
+	color:#fff;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 400;
+}
+.mokuai{
+	text-align: center;
+}
+
+.btn-doc:hover{
+	background: #000;
+	color:#fff;
+}
+.btn-doc{
+	background-color: transparent;
+    border: 1px solid #337AB7;
+    bottom: -40px;
+    position: relative;
+    color:#fff;
+}
+.header-dq{
+	background: #333;
+}
+
+@media screen and (max-width:770px){
+	.btn-doc{
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 10px;
+	    width: 50%;
+	}
+	.header-main{
+		height:480px;
+	}
+	.infohide{
+		display: none;
+	}
+}
+
+.active_header{
+	border-bottom: 2px solid #F4655F;
+}
+.content-main,.content-menu{
+	position: relative;
+}
+
+
+/*右侧导航*/
+.widget{
+	margin-bottom: 35px;
+	padding:25px;
+	background: #fff;
+}
+.widget .title{
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 21px;
+    margin-top: 0;
+    padding-bottom: 7px;
+    position: relative;
+}
+.widget .title::after{
+    background: #f4645f none repeat scroll 0 0;
+    bottom: -1px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 90px;
+}
+.menu-ul>li{
+	width:100%;
+}
+.dropdown a{
+	color:#fff;
+}
+.foodmate-ul li{
+	width:100%;
+}
+.more{
+	position: absolute;
+	height:40px;
+	line-height: 40px;
+	right:20px;
+	top:0;
+}
+.panel-heading{
+	position: relative;
+}
+.widget a{
+	 margin: 0 7px 7px 0;
+}
+
+
+/*footer*/
+.footer-main{
+	width:100%;
+	background: #202020;
+	
+}
+.widget-footer{
+	text-align: left;
+	position: relative;
+	padding:30px;
+	color:#777;
+
+}
+.widget-footer h4.title{
+	color:#777;
+	font-size: 16px;
+}
+.widget-footer .title{
+    border-bottom: 1px solid #444;
+    margin-bottom: 21px;
+    margin-top: 0;
+    padding-bottom: 7px;
+    position: relative;
+}
+.widget-footer .title::after{
+    background: #f4645f none repeat scroll 0 0;
+    bottom: -1px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 90px;
+}
+.widget-footer a{
+	margin-bottom: 7px;
+	background: transparent;
+	color:#777;
+	border-color: #444;
+}
+.cylj>a{
+	margin-right: 10px;
+	white-space: nowrap;
+}
+.copyright{
+	height:70px;
+	line-height: 70px;
+	background: #111;
+	color:#777;
+	text-align: center;
+	border-top:1px solid #444;
+}
+.copyright span{
+	padding:7px;
+}
+.copyright span a{
+	color:#777;
+}
