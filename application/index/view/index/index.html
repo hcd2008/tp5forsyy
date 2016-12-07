@@ -12,7 +12,7 @@
     $(function(){
       $("#pingmu").click(function(){
         
-        $("#view").addClass("container");
+        $("#view").addClass("container-fluid");
         $(this).text("宽屏版");
         return false;
       })
@@ -61,6 +61,7 @@
             <li class="active active_header"><a href="#">首页</a></li>
             <li><a href="#">法规动态</a></li>
             <li><a href="#">标准动态</a></li>
+            <li><a href="#">标签云</a></li>
             <li><a href="#">法规问答</a></li>
             <li><a href="#">标法专题</a></li>
             <li class="dropdown">
@@ -83,7 +84,7 @@
     </nav>
     <!-- 头部导航结束 -->
     <!-- 正文开始 -->
-    <div class="container-fluid" id="view">
+    <div class="container" id="view">
         <!-- row开始 -->
         <div class="row">
           <!-- 左侧开始 -->
@@ -105,7 +106,7 @@
               </div>
               <div class="content-content">
                 <div class="panel panel-info">
-                  <div class="panel-heading">最新添加法规 <div class="more"><a href="">更多</a></div></div>
+                  <div class="panel-heading">最新添加法规<!--  <div class="more"><a href="">更多</a></div> --></div>
                   <table class="table table-hover table-striped">
                     <tr>
                       <th width=30%>标题</th>
@@ -214,7 +215,7 @@
                <!-- 内容开始 -->
               <div class="content-content">
                 <div class="panel panel-info">
-                  <div class="panel-heading">最新添加标准 <div class="more"><a href="">更多</a></div></div>
+                  <div class="panel-heading">最新添加标准 <!-- <div class="more"><a href="">更多</a></div> --></div>
                   <table class="table table-hover table-striped">
                     <tr>
                       <th width=30%>标题</th>
