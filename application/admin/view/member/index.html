@@ -1,0 +1,43 @@
+{layout name="layout"}
+<style>
+	.tableBasic td,.tableBasic th{
+		text-align: center;
+	}
+</style>
+<div id="dcMain"> <!-- 当前位置 -->
+	<div id="urHere">
+		后台管理中心<b>></b><strong>会员管理</strong>
+	</div>
+	<div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    	<h3>
+    		<a href="{:url('admin/member/index')}" class="actionBtn">会员列表</a>
+    		<a href="{:url('admin/member/addUser')}" class="actionBtn add">添加会员</a>
+    		会员管理
+    	</h3>
+    	<table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+			<tr>
+			 <th width="30" align="center"><input type="checkbox" class="selectall"></th>
+			 <th align="left">会员名称</th>
+			 <th align="center">会员权限</th>
+			 <th align="center">添加时间</th>
+			 <th  align="center">登录次数</th>
+			 <th  align="center">最后登录时间</th>
+			 <th width=100 align="center">操作</th>
+			</tr>
+			{volist name="list" id="v"}
+			<tr>
+				<td><input type="checkbox" value="{$v.id}"></td>
+				<td>{$v.username}</td>
+				<td>{$v.quanxian|get_quanxian}</td>
+				<td>{$v.addtime|date="Y-m-d H:i:s",###}</td>
+				<td>{$v.logintimes}</td>
+				<td>{if $v.logintime>0}{$v.logintime|date="Y-m-d H:i:s",###}{/if}</td>
+				<td>
+					<a title="编辑" href="{:url('admin/member/editUser',['userid'=>$v.id])}"><img src="__ASSETS__images/edit.png" alt=""></a>&nbsp;<a class="delete" title="删除" onclick="return confirm('确定删除吗')" href="{:url('admin/member/delUser',['userid'=>$v.id])}"><img src="__ASSETS__images/delete.png" alt=""></a>
+				</td>
+			</tr>
+			{/volist}
+    	</table>
+    	{$list->render()}
+    </div>
+</div>

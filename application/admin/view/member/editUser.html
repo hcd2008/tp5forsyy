@@ -1,0 +1,54 @@
+{layout name="layout"}
+<div id="dcMain"> <!-- 当前位置 -->
+	<div id="urHere">
+		后台管理中心<b>></b><strong>会员管理</strong><b>></b><strong>编辑会员</strong>
+	</div>
+	<div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    	<h3>
+    		<a href="{:url('admin/member/index')}" class="actionBtn">会员列表</a>
+    		<a href="{:url('admin/member/addUser')}" class="actionBtn add">添加会员</a>
+    		编辑会员
+    	</h3>
+    	<form action="" method="post">
+    	<table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+    		<input type="hidden">
+			<tr>
+			 	<td width=160 align="right">用户名</td>
+			 	<td>
+			 		{$info.username}
+			 	</td>
+			</tr>
+			<tr>
+			 	<td align="right">密码</td>
+			 	<td>
+			 		<input type="password" name="password" size="80" class="inpMain">&nbsp;(不修改则不要填写)
+			 	</td>
+			</tr>
+			<tr>
+				<td align="right">权限</td>
+				<td>
+					<input type="checkbox" value=1 <?php if(in_array("1", $info['qx'])){echo "checked";} ?> name="quanxian[]">&nbsp;标准&nbsp;&nbsp;
+					<input type="checkbox" value=2 <?php if(in_array("2", $info['qx'])){echo "checked";} ?> name="quanxian[]">&nbsp;法规&nbsp;&nbsp;
+					<input type="checkbox" value=3 <?php if(in_array("3", $info['qx'])){echo "checked";} ?> name="quanxian[]">&nbsp;竞品&nbsp;&nbsp;
+					<input type="checkbox" value=4 <?php if(in_array("4", $info['qx'])){echo "checked";} ?> name="quanxian[]">&nbsp;日报&nbsp;&nbsp;
+				</td>
+			</tr>
+			<tr>
+			 	<td align="right">状态</td>
+			 	<td>
+			 		<select name="state" id="">
+			 			<option value="1" <?php if($info['state']==1) echo "checked"; ?>>正常</option>
+			 			<option value="0" <?php if($info['state']==0) echo "checked"; ?>>禁止登录</option>
+			 		</select>
+			 	</td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td>
+					<input type="submit" class="btn" name="submit" value="提 交">
+				</td>
+			</tr>
+    	</table>
+    	</form>
+    </div>
+</div>

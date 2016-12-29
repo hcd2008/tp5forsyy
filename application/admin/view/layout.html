@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台管理</title>
+<link href="__ASSETS__css/public.css" rel="stylesheet" type="text/css">
+<link href="__ASSETS__css/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__ASSETS__js/jquery.min.js"></script>
+<script type="text/javascript" src="__ASSETS__js/global.js"></script>
+</head>
+<body>
+<div id="dcWrap"> <div id="dcHead">
+ <div id="head">
+  <div class="logo"><a href="{:url('admin/index/index')}">系统后台管理</a></div>
+  <div class="nav">
+   <ul>
+    <li><a href="../index.php" target="_blank">查看站点</a></li>
+    <li><a href="index.php?rec=clear_cache">清除缓存</a></li>
+    <li><a href="http://www.mycodes.net" target="_blank">帮助</a></li>
+    <li class="noRight"><a href="module.html">DouPHP+</a></li>
+   </ul>
+   <ul class="navRight">
+    <li class="M noLeft"><a href="JavaScript:void(0);">您好，admin</a>
+     <div class="drop mUser">
+      <a href="manager.php?rec=edit&id=1">编辑我的个人资料</a>
+      <a href="manager.php?rec=cloud_account">设置云账户</a>
+     </div>
+    </li>
+    <li class="noRight"><a href="login.php?rec=logout">退出</a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<!-- dcHead 结束 --> <div id="dcLeft"><div id="menu">
+ <ul class="top">
+  <li class="current"><a href="index.html"><i class="home"></i><em>管理首页</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="index.html"><i class="system"></i><em>网站设置</em></a></li>
+  <li><a href="index.html"><i class="theme"></i><em>主题风格</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="system.html"><i class="system"></i><em>标准设置</em></a></li>
+  <li><a href="nav.html"><i class="system"></i><em>法规设置</em></a></li>
+  <li><a href="show.html"><i class="system"></i><em>竞品设置</em></a></li>
+  <li><a href="page.html"><i class="system"></i><em>日报设置</em></a></li>
+ </ul>
+   <ul>
+  <li><a href="{:url('admin/member/index')}"><i class="productCat"></i><em>会员管理</em></a></li>
+  <li><a href="product.html"><i class="user"></i><em>部门管理</em></a></li>
+  <li><a href="product.html"><i class="manager"></i><em>管理员管理</em></a></li>
+  <li><a href="manager.php?rec=manager_log"><i class="managerLog"></i><em>操作记录</em></a></li>
+ </ul>
+  <ul>
+  <li><a href="article_category.html"><i class="nav"></i><em>常用链接</em></a></li>
+  <li><a href="article.html"><i class="article"></i><em>我的客服</em></a></li>
+ </ul>
+</div></div>
+{__CONTENT__}
+<div class="clear"></div>
+<div id="dcFooter">
+ <div id="footer">
+  <!-- <div class="line"></div> -->
+  <ul>
+   版权所有 © 2016-2018 烟台富美特食品科技有限公司，并保留所有权利。
+  </ul>
+ </div>
+</div><!-- dcFooter 结束 -->
+<div class="clear"></div> </div>
+<script src="http://www.mycodes.net/js/tongji.js"></script>
+<script src="http://www.mycodes.net/js/youxia.js" type="text/javascript"></script>
+
+</body>
+</html>
