@@ -251,6 +251,9 @@ select {
  background-color: #EEEEEE;
  height: 16px;
 }
+.tableBasic tr:hover{
+	background: #fff;
+}
 .tableBasic .child {
  background-color: #FFFFFF;
 }
@@ -552,9 +555,12 @@ select {
 #menu li i.download {
  background-position: 13px -959px;
 }
-#menu li.current{
-	background: #fefefe;
+/*#menu li.current{
+	background: #ccc;
 }
+#menu li.current a{
+	color:#fff;
+}*/
 /* 当前位置
 ----------------------------------------------- */
 #urHere {
@@ -576,6 +582,7 @@ select {
 .mainBox {
  border-left: 1px solid #FFF;
  padding: 30px 22px 50px 22px;
+ min-height: 550px;
 }
 .mainBox h3 {
  border-bottom: 1px solid #D7D7D7;

@@ -4,6 +4,9 @@
 	use think\Db;
 	use think\Validate;
 	class Member extends AdminBase{
+		public function _initialize(){
+		     $this->assign('controller',$this->request->controller());
+		}
 		public function index(){
 			$res=Db::name('member')->field("id,username,quanxian,state,logintime,logintimes,addtime")->where('state','>=',0)->order("id")->paginate(10);
 			$data=[

@@ -1,0 +1,43 @@
+{layout name="layout"}
+<div id="dcMain"> <!-- 当前位置 -->
+	<div id="urHere">
+		后台管理中心<b>></b><strong>部门管理</strong><b>></b><strong>添加部门</strong>
+	</div>
+	<div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    	<h3>
+    		<a href="{:url('admin/dept/index')}" class="actionBtn">部门列表</a>
+    		<a href="{:url('admin/dept/addDept')}" class="actionBtn add">添加部门</a>
+    		添加部门
+    	</h3>
+    	<form action="" method="post">
+    	<table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+			<tr>
+				<td align="right">部门名称</td>
+				<td>
+					<input type="text" size="80" class="inpMain" name="name">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">上级部门</td>
+				<td>
+					<select name="parentid" id="">
+						<option value="0">--无--</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">排序</td>
+				<td>
+					<input type="text" size="20" class="inpMain" name="sort" value=1>
+				</td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td>
+					<input type="submit" class="btn" name="submit" value="提 交">
+				</td>
+			</tr>
+    	</table>
+    	</form>
+    </div>
+</div>
